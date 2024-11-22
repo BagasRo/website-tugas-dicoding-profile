@@ -8,3 +8,6 @@ handlers:
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+
+  - url: /styles
+    static_dir: styles/
