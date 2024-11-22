@@ -1,0 +1,164 @@
+/* Global settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f7f7f7;
+}
+p {
+    margin-bottom: 1.5rem; 
+    line-height: 1.6;     
+}
+/* Wrapper for header content */
+.wrapper {
+    padding: 20px;
+    background-color: rgb(82, 22, 22); /* Dark red background */
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Audiowide', sans-serif;
+}
+
+h1 .game {
+    color: #3498db; /* Blue */
+}
+
+h1 .tech {
+    color: #fff; /* White */
+}
+
+/* Main content */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#content {
+    flex: 3;
+}
+
+.card {
+    background-color: #E9EFEC; /* Light green background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #6A9C89; /* Green */
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.google-icon  {
+        width: auto;
+        height: 200px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+footer {
+    background-color: #C4DAD2; /* Light grey-blue */
+    color: #2c3e50; /* Dark text */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile image */
+.profile-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    width: 30%;
+    background-color: #62825D; /* Light Green */
+    color: white;
+    border-radius: 10px; /* Membuat sudut bundar */
+    padding: 10px; /* Opsional, untuk memberi ruang di dalam elemen */
+    text-align: center; /* Opsional, untuk memposisikan teks di tengah */
+}
+
+td {
+    background-color: #ecf0f1; /* Light grey */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .profile-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
